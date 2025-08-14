@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--project-ref=immahhctbynraxetgkhs"
+      ],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "sbp_ad0ea7f8c3949295cc83923d2459d3dabb8973ea"
+      }
+    },
+    "MCP_DOCKER": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "alpine/socat",
+        "STDIO",
+        "TCP:host.docker.internal:8811"
+      ],
+      "alwaysAllow": [
+        "puppeteer_navigate",
+        "puppeteer_screenshot",
+        "puppeteer_click",
+        "puppeteer_fill",
+        "puppeteer_select",
+        "puppeteer_hover",
+        "puppeteer_evaluate",
+        "sequentialthinking"
+      ]
+    }
+  }
+}

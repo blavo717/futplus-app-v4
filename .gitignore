@@ -35,3 +35,38 @@ desktop.ini
 
 # Backup files from install script
 superclaude-backup.*
+
+# Expo
+.expo/
+dist/
+*.orig.*
+web-build/
+
+# Environment variables
+.env.local
+.env.production
+.env
+
+# Node
+node_modules/
+
+# React Native
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# TypeScript
+*.tsbuildinfo
+
+# Tests
+coverage/
